@@ -1,16 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Home from './images/Home.png';
+import box_2 from './images/box_2.png';
+import card from './images/card.png';
+import Profile from './images/Profile.png';
+
+
+
+
 
 function Page1() {
     return (
         <div>
              <h2>Order Management</h2>
-      <div className="card ">
-     <div className="card-body">
-     <h6  className="text-primary">Active(10)</h6>
-    <h6 className="text-right">Complete</h6>
+             <div class="card-header w-75">
+          <h6  className="text-primary ml-5 ">Active(10)</h6>
+     <h6  className="text-muted text-right mr-5 px-6">Complete</h6>
     
-    </div>
+    
 </div>
 <h2> 18th November,20</h2>
 <div className="card card w-75 mr-5">
@@ -74,9 +81,16 @@ function Page1() {
   <a href="#" className="  text-success text-center" >Delivery in progress</a>
   </div>
 </div><br/>
-      <h2> 17th November,20</h2>
-            
-        </div>
+<h2> 17th November,20</h2>
+<div class="card-header w-75">
+  <Link to=''>
+<img  src ={Home} alt='' ></img>   </Link>
+<Link to=''><img className =  " ml-6 "  src ={box_2 } alt='' ></img> </Link> 
+<Link classsname='link-active' to=''><img  className ="ml-6 "src ={card} alt='' ></img> </Link> 
+<Link to=''><img  className =" ml-6 "src ={Profile} alt='' ></img>  </Link>
+    
+  </div>
+  </div>
     )
 }
 
